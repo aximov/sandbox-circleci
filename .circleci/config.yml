@@ -1,6 +1,10 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - master
+        - master-2019
     docker:
       - image: circleci/node:8.9.4
 
